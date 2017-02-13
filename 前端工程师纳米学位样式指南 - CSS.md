@@ -1,4 +1,4 @@
-# 前端工程师纳米学位样式指南 - JavaScript
+# 前端工程师纳米学位样式指南 - CSS
 
 点此查看文档英文版（[pdf](https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd001/Udacity+Nanodegree+Style+Guide_JavaScript_EN.pdf)，[GitHub.io](http://udacity.github.io/frontend-nanodegree-styleguide/javascript.html)）
 
@@ -89,16 +89,26 @@
 **不推荐：**
 
 ```css
+.p-998 { 
+	… 
+} 
 
-.p-998 { … } .btn-green { … }
+.btn-green { 
+	… 
+}
 
 ```
 
 推荐：
 
 ```css
+.gallery { 
+	…
+} 
 
-.gallery { … } .btn-default { … }
+.btn-default { 
+	… 
+}
 
 ```
 
@@ -113,16 +123,26 @@
 **不推荐：**
 
 ```css
+ul#example { 
+	… 
+} 
 
-ul#example { … } div.error { … }
+div.error { 
+	… 
+}
 
 ```
 
 **推荐：**
 
 ```css
+.example { 
+	… 
+} 
 
-.example { … } .error { … }
+.error { 
+	… 
+}
 
 ```
 
@@ -137,16 +157,22 @@ CSS 可提供多种简写属性（例如，padding，而不是 padding-top、pad
 不推荐：
 
 ```css
-
-border-top-style: none; font-family: palatino, georgia, serif; font-size: 100%; line-height: 1.6; padding-bottom: 2em; padding-left: 1em; padding-right: 1em; padding-top: 0;
-
+border-top-style: none;
+font-family: palatino, georgia, serif;
+font-size: 100%; 
+line-height: 1.6; 
+padding-bottom: 2em; 
+padding-left: 1em; 
+padding-right: 1em; 
+padding-top: 0;
 ```
 
 **推荐：**
 
 ```css
-
-border-top: 0; font: 100%/1.6 palatino, georgia, serif; padding: 0 1em 2em;
+border-top: 0; 
+font: 100%/1.6 palatino, georgia, serif; 
+padding: 0 1em 2em;
 
 ```
 
@@ -157,16 +183,16 @@ border-top: 0; font: 100%/1.6 palatino, georgia, serif; padding: 0 1em 2em;
 **不推荐：**
 
 ```css
-
-margin: 0em; padding: 0px;
+margin: 0em; 
+padding: 0px;
 
 ```
 
 **推荐：**
 
 ```css
-
-margin: 0; padding: 0;
+margin: 0; 
+padding: 0;
 
 ```
 
@@ -205,16 +231,26 @@ margin: 0; padding: 0;
 **不推荐：**
 
 ```css
+.demoimage { 
+	… 
+} 
 
-.demoimage { … } .errorStatus { … }
+.errorStatus {
+	 …
+}
 
 ```
 
 **推荐：**
 
 ```css
+.demo-image { 
+	… 
+} 
 
-.demo-image { … } .error-status { … }
+.error-status { 
+	… 
+}
 
 ```
 
@@ -233,8 +269,12 @@ margin: 0; padding: 0;
 推荐：
 
 ```css
-
-@media screen, projection { html { background: #fff; color: #444; } }
+@media screen, projection { 
+	html { 
+		background: #fff; 
+		color: #444; 
+	} 
+}
 
 ```
 
@@ -245,16 +285,20 @@ margin: 0; padding: 0;
 **不推荐：**
 
 ```css
-
-.test { display: block; height: 100px }
+.test { 
+	display: block; 
+	height: 100px 
+}
 
 ```
 
 **推荐：**
 
 ```css
-
-.test { display: block; height: 100px; }
+.test { 
+	display: block;
+	height: 100px; 
+}
 
 ```
 
@@ -265,9 +309,8 @@ margin: 0; padding: 0;
 **不推荐：**
 
 ```css
-
-font-weight:bold; padding : 0;
-
+font-weight:bold;
+padding : 0;
 margin :0;
 
 ```
@@ -275,8 +318,9 @@ margin :0;
 **推荐：**
 
 ```css
-
-font-weight: bold; padding: 0; margin: 0;
+font-weight: bold;
+padding: 0; 
+margin: 0;
 
 ```
 
@@ -287,16 +331,26 @@ font-weight: bold; padding: 0; margin: 0;
 **不推荐：**
 
 ```css
+.video-block{ 
+	margin: 0; 
+} 
 
-.video-block{ margin: 0; } .audio-block { margin: 0; }
+.audio-block { 
+	margin: 0;
+}
 
 ```
 
 **推荐：**
 
 ```css
+.video-block { 
+	margin: 0; 
+} 
 
-.video-block { margin: 0; } .audio-block { margin: 0; }
+.audio-block { 
+	margin: 0; 
+}
 
 ```
 
@@ -307,16 +361,22 @@ font-weight: bold; padding: 0; margin: 0;
 **不推荐：**
 
 ```css
-
-h1, h2, h3 { font-weight: normal; line-height: 1.2; }
+h1, h2, h3 { 
+	font-weight: normal; 
+	line-height: 1.2; 
+}
 
 ```
 
 **推荐：**
 
 ```css
-
-h1, h2, h3 { font-weight: normal; line-height: 1.2; }
+h1, 
+h2, 
+h3 { 
+	font-weight: normal; 
+	line-height: 1.2; 
+}
 
 ```
 
@@ -327,8 +387,14 @@ h1, h2, h3 { font-weight: normal; line-height: 1.2; }
 **推荐：**
 
 ```css
+html { 
+	background: #fff; 
+} 
 
-html { background: #fff; } body { margin: auto; width: 50%; }
+body { 
+	margin: auto; 
+	width: 50%; 
+}
 
 ```
 
@@ -339,16 +405,20 @@ html { background: #fff; } body { margin: auto; width: 50%; }
 **不推荐：**
 
 ```css
-
-@import url("css/links.css"); html { font-family: 'Open Sans', arial, sans-serif; }
+@import url("css/links.css"); 
+html { 
+	font-family: 'Open Sans', arial, sans-serif; 
+}
 
 ```
 
 **推荐：**
 
 ```css
-
-@import url(css/links.css); html { font-family: "Open Sans", arial, sans-serif; }
+@import url(css/links.css); 
+html { 
+	font-family: "Open Sans", arial, sans-serif; 
+}
 
 ```
 
@@ -365,20 +435,25 @@ html { background: #fff; } body { margin: auto; width: 50%; }
 .header {
 …
 }
+
 .header-nav {
 …
 }
+
 /* Content */
 .gallery {
 …
 }
+
 .gallery-img {
 …
 }
+
 /* Footer */
 .footer {
 …
 }
+
 .footer-nav {
 …
 }
