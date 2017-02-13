@@ -135,11 +135,11 @@
 
 **不推荐：**
 
-`欧元的货币符号是： &ldquo;&eur;&rdquo;`。
+`欧元的货币符号是： &ldquo;&eur;&rdquo;`
 
 **推荐：**
 
-`欧元的货币符号是： “€”`。
+`欧元的货币符号是： “€”`
 
 ### 类型属性
 忽略样式表和脚本的类型属性。
@@ -147,7 +147,7 @@
 
 **不推荐：**
 
-`<link rel="stylesheet" href="css/style.css" type="text/css">`
+`<link rel="stylesheet" type="text/css" href="css/style.css">`
 
 **推荐：**
 

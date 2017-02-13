@@ -54,10 +54,10 @@
 
 ```javascript
 /**
-* @description Represents a book
+* @description 简要描述这本书
 * @constructor
-* @param {string} title - The title of the book
-* @param {string} author - The author of the book
+* @param {string} title - 书的标题
+* @param {string} author - 书的作者
 */
 
 function Book(title, author) {
@@ -71,10 +71,10 @@ function Book(title, author) {
 
 ```javascript
 /**
-* @description Adds two numbers
+* @description 添加两个数字
 * @param {number} a
 * @param {number} b
-* @returns {number} Sum of a and b
+* @returns {number} 数字 a 与 b 的和
 */
 
 function sum(a, b) {
@@ -280,17 +280,21 @@ for (var key in myObj) {
 
 **不推荐：**
 ```javascript
-var myString = 'A rather long string of English text, an error message \
-	actually that just keeps going and going -- an error \
-	message that is really really long.';`
+var myPoetry = '一二三四五，\
+	上山打老虎，\
+	老虎没打到，\
+	打到小松鼠，\
+	让我数一数，\
+	一二三四五';
 ```
 
 **推荐：**
 
 ```javascript
-var myString = 'A rather long string of English text, an error message' +
-	'actually that just keeps going and going -- an error' +
-	'message that is really really long.';
+var myPoetry = '黄河远上白云间，' +
+	'一片孤城万仞山。' +
+	'羌笛何须怨杨柳，' +
+	'春风不度玉门关。';
 ```
 
 ### 数组和对象字面量
