@@ -45,10 +45,10 @@
 
 你可以选择使用 [JSDoc](http://usejsdoc.org/)，即编写代码注释的文件生成器和标准，对你的 JavaScript 功能进行记录，其优点包括为你的注释提供技术参照和能够针对文件生成网页的命令行 jsdoc 工具。 JSDoc 会为你提供记录代码的多种注释，但我们只推荐你使用以下种类：
 
-  * [@constructor](http://usejsdoc.org/tags-class.html)：用于记录类别，即用新关键词调用的函数。
-  * [@description](http://usejsdoc.org/tags-description.html)：用于描述你的函数，该标签还可以使你在需要时添加 HTML 标记。
-  * [@param](http://usejsdoc.org/tags-param.html)：用于描述函数参数的名称、类别和说明。
-  * [@returns](http://usejsdoc.org/tags-returns.html)：记录函数返回值的类型和说明。
+* [@constructor](http://usejsdoc.org/tags-class.html)：用于记录类别，即用新关键词调用的函数。
+* [@description](http://usejsdoc.org/tags-description.html)：用于描述你的函数，该标签还可以使你在需要时添加 HTML 标记。
+* [@param](http://usejsdoc.org/tags-param.html)：用于描述函数参数的名称、类别和说明。
+* [@returns](http://usejsdoc.org/tags-returns.html)：记录函数返回值的类型和说明。
 
 该实例说明了如何记录类构造器（注意注释区开头使用的 /**，这个非常重要）：
 
@@ -65,7 +65,7 @@ function Book(title, author) {
 }
 ```
 
-**
+
 
 以下函数含有能返回值的参数，注意，这里的参数作用一目了然，因此并未对其进行说明。
 
@@ -107,7 +107,7 @@ function sum(a, b) {
 
 ### 常量
 
-如果要将某个值设为不可改变的常量，应用大写字母对其命名，如 CONSTANT_VALUE。不要使用关键词 const，因为部分浏览器不支持此用法。
+如果要将某个值设为不可改变的常量，应用大写字母对其命名，如 `CONSTANT_VALUE`。不要使用关键词 `const`，因为部分浏览器不支持此用法。
 
 ### 分号
 
@@ -152,7 +152,7 @@ function foo() {
 **不推荐：**
 
 ```javascript
-var x = new Boolean(0);`
+var x = new Boolean(0);
 if (x) {
     alert('hi');	// 如果 x 是一个真实对象，则显示 hi
 }
@@ -251,7 +251,7 @@ for (var indexCount = 0; indexCount < myArray.length; indexCount++) {
 };
 ```
 ### 对象
-`for-in` 循环用于在对象中循环关键词。这样很容易出错，因为， `for-in` 不会从 `0` 循环至 `for-in`，而是循环对象及其原型链中现存的所有关键词。
+`for-in` 循环用于在对象中循环关键词。这样很容易出错，因为， `for-in` 不会从 `0` 循环，而是循环对象及其原型链中现存的所有关键词。
 如果可以的话，对数据进行整理，以避免迭代对象。如果不可行，将 `for-in` 循环的内容包裹在条件语句中，以避免迭代原型链。
 
 **不推荐：**
@@ -279,25 +279,29 @@ for (var key in myObj) {
 编译期间无法妥善删除各行开头的空格，斜杠后的空白会引发棘手的问题，虽然大部分脚本引擎支持该操作，但这并不属于规格中的一部分。
 
 **不推荐：**
-
-`var myString = 'A rather long string of English text, an error message \
+```javascript
+var myString = 'A rather long string of English text, an error message \
 	actually that just keeps going and going -- an error \
 	message that is really really long.';`
-	
+```
+
 **推荐：**
 
-`var myString = 'A rather long string of English text, an error message' +
+```javascript
+var myString = 'A rather long string of English text, an error message' +
 	'actually that just keeps going and going -- an error' +
-	'message that is really really long.';`
-	
+	'message that is really really long.';
+```
+
 ### 数组和对象字面量
 使用数组和对象字面量，而不是数组和对象构造函数。
 
 **不推荐：**
-
-`var myArray = new Array(x1, x2, x3);`
-`var myObject = new Object();`
-`myObject.a = 0;`
+```javascript
+var myArray = new Array(x1, x2, x3);
+var myObject = new Object();
+myObject.a = 0;
+```
 
 **推荐：**
 
@@ -328,9 +332,11 @@ if (something) {
 
 只有在单行数组和对象初始器可以在写同一行时方可使用这两项。左括号前和右括号后都不应有空格。
 
-推荐：
-`var array = [1, 2, 3];`
-`var object = {a: 1, b: 2, c: 3};`
+**推荐：**
+```javascript
+var array = [1, 2, 3];
+var object = {a: 1, b: 2, c: 3};
+```
 
 多行数组和对象初始器需进行单行缩进，与代码块一样，其括号与内容应位于同一行。
 
