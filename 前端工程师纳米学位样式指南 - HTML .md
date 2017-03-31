@@ -9,17 +9,22 @@
 
 ## 一般格式规则
 ### 字母大小写
+
 仅使用小写。
 
 所有代码均使用小写，该规则适用于 HTML 元素名、属性和属性值（文本/ CDATA 除外）。
 
 **不推荐：**
 
-`<A HREF="/">主页</A>`
+```html
+<A HREF="/" class="HOME">主页</A>
+```
 
 **推荐：**
 
-`<a href="/">主页</a>`
+```html
+<a href="/" class="home">主页</a>
+```
 
 ### 末尾空白
 删除行尾空格。
@@ -28,15 +33,21 @@
 
 **不推荐：**
 
-`<p>什么?</p>__`
+```html
+<p>什么?</p>__
+```
 
 **推荐：**
 
-`<p>一往情深深几许？深山夕照深秋雨。</p>`
+```html
+<p>一往情深深几许？深山夕照深秋雨。</p>
+```
 
 如果使用 Sublime Text，你可在用户设置（User Settings）JSON 文件（可在文本编辑器的菜单中找到）中添加以下代码，每当你以此方法储存文件时，去除行尾空格操作便会自动完成：
 
-`"trim_trailing_white_space_on_save": true`
+```
+"trim_trailing_white_space_on_save": true
+```
 
 ### 缩进
 整个文件中的缩进应保持前后一致，使用 Tab、2个空格或4个空格都可以，但需保持前后一致。
@@ -111,11 +122,15 @@
 
 **不推荐：**
 
-`<div onclick="goToRecommendations();">All recommendations</div>`
+```html
+<div onclick="goToRecommendations();">All recommendations</div>
+```
 
 **推荐：**
 
-`<a href="recommendations/">All recommendations</a>`
+```html
+<a href="recommendations/">All recommendations</a>
+```
 
 ### 多媒体应变计划
 为多媒体设置备用内容。
@@ -128,11 +143,15 @@
 
 **不推荐：**
 
-`<img src="udacity.png">`
+```html
+<img src="udacity.png">
+```
 
 **推荐：**
 
-`<img src="udacity.png" alt="Udacity logo">`
+```html
+<img src="udacity.png" alt="Udacity logo">
+```
 
 ### 关注点分离
 将结构、描述和行为相互分离。
@@ -152,11 +171,15 @@
 
 **不推荐：**
 
-`欧元的货币符号是： &ldquo;&eur;&rdquo;`
+```html
+欧元的货币符号是： “&eur;”
+```
 
 **推荐：**
 
-`欧元的货币符号是： “€”`
+```html
+欧元的货币符号是： “€”
+```
 
 ### 类型属性
 忽略样式表和脚本的类型属性。
@@ -165,19 +188,27 @@
 
 **不推荐：**
 
-`<link rel="stylesheet" type="text/css" href="css/style.css">`
+```html
+<link rel="stylesheet" type="text/css" href="css/style.css">
+```
 
 **推荐：**
 
-`<link rel="stylesheet" href="css/style.css">`
+```html
+<link rel="stylesheet" href="css/style.css">
+```
 
 **不推荐：**
 
-`<script src="js/app.js" type="text/javascript"></script>`
+```html
+<script src="js/app.js" type="text/javascript"></script>
+```
 
 **推荐：**
 
-`<script src="js/app.js"></script>`
+```html
+<script src="js/app.js"></script>
+```
 
 ## HTML 格式规则
 
@@ -243,8 +274,13 @@
 
 **不推荐：**
 
-`<a href='login/' class='btn btn-secondary'>登陆</a>`
+```html
+<a href='login/' class='btn btn-secondary'>登陆</a>
+```
 
 **推荐：**
 
-`<a href="login/" class="btn btn-secondary">登陆</a>`
+```html
+<a href="login/" class="btn btn-secondary">登陆</a>
+```
+
