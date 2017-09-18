@@ -190,14 +190,14 @@
 
 **不推荐：**
 
-```
+```html
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="js/app.js" type="text/javascript"></script>
 ```
 
 **推荐：**
 
-```
+```html
 <link rel="stylesheet" href="css/style.css">
 <script src="js/app.js"></script>
 ```
