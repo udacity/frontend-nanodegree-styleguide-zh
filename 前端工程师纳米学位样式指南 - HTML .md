@@ -182,31 +182,23 @@
 ```
 
 ### 类型属性
-忽略样式表和脚本的类型属性。
+忽略样式表和脚本的 type 属性。
 
-不要针对样式表和脚本使用类型属性。由于 HTML 意味着文本 `/css` 和文本 `/javascript` 为默认设置，在此类语境中无需设置类型属性。在老式浏览器中，也可以安全进行此项操作。
+不要针对样式表和脚本使用 type 属性。因为 HTML 已经默认设置了 `text/css` 和 `text/javascript` ，所以在此类语境中无需设置 type 属性。
+
+在老式浏览器中，也可以安全进行此项操作。
 
 **不推荐：**
 
-```html
+```
 <link rel="stylesheet" type="text/css" href="css/style.css">
-```
-
-**推荐：**
-
-```html
-<link rel="stylesheet" href="css/style.css">
-```
-
-**不推荐：**
-
-```html
 <script src="js/app.js" type="text/javascript"></script>
 ```
 
 **推荐：**
 
-```html
+```
+<link rel="stylesheet" href="css/style.css">
 <script src="js/app.js"></script>
 ```
 
