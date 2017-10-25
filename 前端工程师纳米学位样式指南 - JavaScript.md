@@ -100,14 +100,14 @@ function sum(a, b) {
 
 ### 变量
 
-使用 `var` 声明变量。
+在 JavaScript 里一共有三种定义变量的方式：
 
-如果你未能设置变量，其会被置于全局语境中并可能清除现有值。若没有任何声明，变量的存在范围将难以确定。 
+- [const](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/const)
+- [let](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let)
+- [var](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/var)
 
+当定义变量的时候，你应该使用上面列出的关键字来定义变量。优先考虑使用 `const` 定义你的变量，如果觉得以后需要对变量重新赋值的，则使用 `let`。现在已经不推荐使用 `var` 关键字来定义变量了
 
-### 常量
-
-如果要将某个值设为不可改变的常量，应用大写字母对其命名，如 `CONSTANT_VALUE`。不要使用关键词 `const`，因为部分浏览器不支持此用法。
 
 ### 分号
 
