@@ -102,9 +102,9 @@ function sum(a, b) {
 
 在 JavaScript 里一共有三种定义变量的方式：
 
-- [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
-- [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
-- [var](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
+- [const](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/const)
+- [let](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let)
+- [var](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/var)
 
 当定义变量的时候，你应该使用上面列出的关键字来定义变量。优先考虑使用 `const` 定义你的变量，如果觉得以后需要对变量重新赋值的，则使用 `let`。现在已经不推荐使用 `var` 关键字来定义变量了
 
