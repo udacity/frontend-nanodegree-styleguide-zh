@@ -267,12 +267,12 @@
 **不推荐：**
 
 ```html
-<a href='login/' class='btn btn-secondary'>登陆</a>
+<a href='login/' class='btn btn-secondary'>登录</a>
 ```
 
 **推荐：**
 
 ```html
-<a href="login/" class="btn btn-secondary">登陆</a>
+<a href="login/" class="btn btn-secondary">登录</a>
 ```
 
