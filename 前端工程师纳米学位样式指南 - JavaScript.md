@@ -154,7 +154,7 @@ function foo() {
 ```javascript
 var x = new Boolean(0);
 if (x) {
-    alert('hi');	// 如果 x 是一个真实对象，则显示 hi
+    alert('hi');    // 如果 x 是一个真实对象，则显示 hi
 }
 ```
 **推荐：**
@@ -162,7 +162,7 @@ if (x) {
 ```javascript
 var x = Boolean(false);
 if (x) {
-    alert('hi');	// 如果 x 是一个否定的布尔值，则显示 hi
+    alert('hi');    // 如果 x 是一个否定的布尔值，则显示 hi
 }
 ```
 
@@ -187,7 +187,7 @@ function foo(element, a, b) {
 
 ```javascript
 function bar(a, b) {
-	return function() { /* 使用 a 和 b */ }
+    return function() { /* 使用 a 和 b */ }
 }
 ```
 
@@ -205,15 +205,15 @@ for (var indexNum in myArray) {
 }
 var starWars = {
     "creatures": [
-    	{
+        {
             "name": "bantha",
             "face": "furry"
-    	},
-    	{
+        },
+        {
             "name": "loth-cat",
             "face": "toothy"
-    	}
-	]
+        }
+    ]
 };
 for (var i in starWars.creatures) {
     console.log(starWars.creatures[i].name);
@@ -230,15 +230,15 @@ mySimpleArray.forEach(function(val) {
 });
 var starWars = {
     "creatures": [
-    	{
+        {
             "name": "bantha",
             "face": "furry"
-    	},
-    	{
+        },
+        {
             "name": "loth-cat",
             "face": "toothy"
-    	}
-	]
+        }
+    ]
 };
 starWars.creatures.forEach(function(creature){
     console.log(creature.name);
@@ -268,9 +268,9 @@ for (var key in myObj) {
 ```javascript
 myObj = {'firstName':'Ada','lastName':'Lovelace'};
 for (var key in myObj) {
-	if (myObj.hasOwnProperty(key)) {
+    if (myObj.hasOwnProperty(key)) {
         console.log(myObj[key]);
-	}
+    }
 }
 ```
 
@@ -281,20 +281,20 @@ for (var key in myObj) {
 **不推荐：**
 ```javascript
 var myPoetry = '一二三四五，\
-	上山打老虎，\
-	老虎没打到，\
-	打到小松鼠，\
-	让我数一数，\
-	一二三四五';
+    上山打老虎，\
+    老虎没打到，\
+    打到小松鼠，\
+    让我数一数，\
+    一二三四五';
 ```
 
 **推荐：**
 
 ```javascript
 var myPoetry = '黄河远上白云间，' +
-	'一片孤城万仞山。' +
-	'羌笛何须怨杨柳，' +
-	'春风不度玉门关。';
+    '一片孤城万仞山。' +
+    '羌笛何须怨杨柳，' +
+    '春风不度玉门关。';
 ```
 
 ### 数组和对象字面量
@@ -312,7 +312,7 @@ myObject.a = 0;
 ```javascript
 var myArray = [x1, x2, x3];
 var myObject = {
-	a: 0
+    a: 0
 };
 ```
 
@@ -328,9 +328,9 @@ var myObject = {
 
 ```javascript
 if (something) {
-	// 执行某项任务
+    // 执行某项任务
 } else {
-	// 执行另外一项任务
+    // 执行另外一项任务
 }
 ```
 
@@ -348,16 +348,16 @@ var object = {a: 1, b: 2, c: 3};
 
 ```javascript
 var array = [
-	'Joe <joe@email.com>',
-	'Sal <sal@email.com>',
-	'Murr <murr@email.com>',
-	'Q <q@email.com>'
+    'Joe <joe@email.com>',
+    'Sal <sal@email.com>',
+    'Murr <murr@email.com>',
+    'Q <q@email.com>'
 ];
 
 var object = {
-	id: 'foo',
-	class: 'foo-important',
-	name: 'notification'
+    id: 'foo',
+    class: 'foo-important',
+    name: 'notification'
 };
 
 ```
@@ -397,9 +397,9 @@ var object = {
 
 ```javascript
 if (val) {
-	return foo();
+    return foo();
 } else {
-	return bar();
+    return bar();
 }
 
 ```
@@ -415,12 +415,12 @@ if (val) {
 
 ```javascript
 function foo(name) {
-	var theName;
-	if (name) {
-    	theName = name;
-	} else {
-    	theName = 'John';
-	}
+    var theName;
+    if (name) {
+        theName = name;
+    } else {
+        theName = 'John';
+    }
 }
 ```
 
@@ -428,7 +428,7 @@ function foo(name) {
 
 ```javascript
 function foo(name) {
-	var theName = name || 'John';
+    var theName = name || 'John';
 }
 ```
 
@@ -438,9 +438,9 @@ function foo(name) {
 
 ```javascript
 if (node) {
-	if (node.kids) {
+    if (node.kids) {
         console.log(node.kids);
-	}
+    }
 }
 ```
 

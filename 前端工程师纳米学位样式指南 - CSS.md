@@ -90,11 +90,11 @@
 
 ```css
 .p-998 { 
-	… 
+    … 
 } 
 
 .btn-green { 
-	… 
+    … 
 }
 
 ```
@@ -103,11 +103,11 @@
 
 ```css
 .gallery { 
-	…
+    …
 } 
 
 .btn-default { 
-	… 
+    … 
 }
 
 ```
@@ -124,11 +124,11 @@
 
 ```css
 ul#example { 
-	… 
+    … 
 } 
 
 div.error { 
-	… 
+    … 
 }
 
 ```
@@ -137,11 +137,11 @@ div.error {
 
 ```css
 .example { 
-	… 
+    … 
 } 
 
 .error { 
-	… 
+    … 
 }
 
 ```
@@ -232,11 +232,11 @@ padding: 0;
 
 ```css
 .demoimage { 
-	… 
+    … 
 } 
 
 .errorStatus {
-	 …
+     …
 }
 
 ```
@@ -245,11 +245,11 @@ padding: 0;
 
 ```css
 .demo-image { 
-	… 
+    … 
 } 
 
 .error-status { 
-	… 
+    … 
 }
 
 ```
@@ -270,10 +270,10 @@ padding: 0;
 
 ```css
 @media screen, projection { 
-	html { 
-		background: #fff; 
-		color: #444; 
-	} 
+    html { 
+        background: #fff; 
+        color: #444; 
+    } 
 }
 
 ```
@@ -286,8 +286,8 @@ padding: 0;
 
 ```css
 .test { 
-	display: block; 
-	height: 100px 
+    display: block; 
+    height: 100px 
 }
 
 ```
@@ -296,8 +296,8 @@ padding: 0;
 
 ```css
 .test { 
-	display: block;
-	height: 100px; 
+    display: block;
+    height: 100px; 
 }
 
 ```
@@ -332,11 +332,11 @@ margin: 0;
 
 ```css
 .video-block{ 
-	margin: 0; 
+    margin: 0; 
 } 
 
 .audio-block{ 
-	margin: 0;
+    margin: 0;
 }
 
 ```
@@ -345,11 +345,11 @@ margin: 0;
 
 ```css
 .video-block { 
-	margin: 0; 
+    margin: 0; 
 } 
 
 .audio-block { 
-	margin: 0; 
+    margin: 0; 
 }
 
 ```
@@ -362,8 +362,8 @@ margin: 0;
 
 ```css
 h1, h2, h3 { 
-	font-weight: normal; 
-	line-height: 1.2; 
+    font-weight: normal; 
+    line-height: 1.2; 
 }
 
 ```
@@ -374,8 +374,8 @@ h1, h2, h3 {
 h1, 
 h2, 
 h3 { 
-	font-weight: normal; 
-	line-height: 1.2; 
+    font-weight: normal; 
+    line-height: 1.2; 
 }
 
 ```
@@ -388,12 +388,12 @@ h3 {
 
 ```css
 html { 
-	background: #fff; 
+    background: #fff; 
 } 
 
 body { 
-	margin: auto; 
-	width: 50%; 
+    margin: auto; 
+    width: 50%; 
 }
 
 ```
@@ -407,7 +407,7 @@ body {
 ```css
 @import url("css/links.css"); 
 html { 
-	font-family: 'Open Sans', arial, sans-serif; 
+    font-family: 'Open Sans', arial, sans-serif; 
 }
 
 ```
@@ -417,7 +417,7 @@ html {
 ```css
 @import url(css/links.css); 
 html { 
-	font-family: "Open Sans", arial, sans-serif; 
+    font-family: "Open Sans", arial, sans-serif; 
 }
 
 ```
