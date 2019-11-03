@@ -8,7 +8,7 @@ html:
 print_background: false
 ---
 
-# 前端工程师纳米学位样式指南 - HTML
+# 优达学城前端工程师纳米学位样式指南 - HTML
 
 点此查看文档英文版（[pdf](https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd001/Udacity+Nanodegree+Style+Guide_HTML_EN.pdf)，[GitHub.io](http://udacity.github.io/frontend-nanodegree-styleguide/index.html)）
 
